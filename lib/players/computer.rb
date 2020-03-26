@@ -23,6 +23,8 @@ module Players
 def move(board)
   if board.cells[4] == " "
    "5"
+  else
+    computer_move
 
   end
 
