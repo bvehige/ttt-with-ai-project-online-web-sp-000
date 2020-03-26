@@ -113,7 +113,7 @@ def game_start
     
   elsif game_type == "wargames"
     victories = 0 
-    100
+    100.times Gam
    end
   
   puts "Would you like to play again? Y or N?" 
