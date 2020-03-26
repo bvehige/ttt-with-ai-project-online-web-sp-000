@@ -15,7 +15,7 @@ def move(board)
     
   elsif middles.find {|cell| cell == " "}
    
-  elsif board.cells.find {|cell| == " "}
+  elsif board.cells.find {|cell| cell == " "}
   
 
 end
