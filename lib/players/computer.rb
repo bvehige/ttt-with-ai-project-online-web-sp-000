@@ -11,16 +11,15 @@ attr_accessor :board
 def move(board)
   if board.cells[4] == " "
    "5"
-  elsif corners.find {|cell| board.cells[cell] == " "}
-    
-  elsif middles.find {|cell| board.cells[cell] == " "}
-   
-  elsif board.cells.find {|cell| board.cells[cell] == " "}
+
+  end
+
+end
+
+def computer_move 
   
-
 end
 
-end
 
   
 end
