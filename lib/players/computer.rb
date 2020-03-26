@@ -5,7 +5,7 @@ module Players
 def move(board)
   
   corners = board.cells[0, 2, 6, 8]
-  middles board.cells[1, 4, 6, 7]
+  middles board.cells[1, 3, 5, 7]
   
   if board.cells[4] == " "
    "5"
