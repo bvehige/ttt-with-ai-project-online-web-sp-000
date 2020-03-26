@@ -3,11 +3,11 @@ module Players
   class Computer < Player
 
 def move(board)
+  
+  corners = board.cells[0, 2, ]
+  
   if board.cells[4] == " "
    "5"
-  
-  
-  
   elsif board.cells[0] == " "
    "1" 
   elsif board.cells[1] == " "
