@@ -89,10 +89,11 @@ end
 
 def game_start
  puts "How many players would like to play?"
- puts "Please enter 1, 2, or 0"
+ puts "Please enter 1, 2, 0, or wargames"
  puts    "1 - for You vs. Computer"
  puts    "2 - for Human vs. Human" 
  puts    "0 - for Computer vs. Itself"
+ puts    "wargames - the computer plays itself 100 times and "
  
  game_type = gets.chomp
  
