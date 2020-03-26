@@ -39,7 +39,7 @@ def corner_move
 end
 
 def middle_move
-  middle.find {|cell| board.cells
+  middle.find {|cell| board.cells[cell] == " "}
 end
 
 def block 
