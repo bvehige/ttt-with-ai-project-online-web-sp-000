@@ -116,10 +116,12 @@ def game_start
     victories = 0
     while games < 100 
      Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play 
-     if 
+     if won? 
+       victories += 1
+     end
      games += 1 
    end
-   puts "There were #{victories} acheived"
+   puts "There were #{victories} victories acheived"
    end
   
   puts "Would you like to play again? Y or N?" 
