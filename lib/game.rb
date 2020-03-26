@@ -17,7 +17,7 @@ class Game
       @player_1 = player_1
       @player_2 = player_2
       @board = board 
-      Board.display
+      @board.display
       
   end
   
@@ -65,7 +65,7 @@ def turn
   input = self.current_player.move(board).to_i  
   if board.valid_move?(input.to_s)
     board.update(input, current_player)
-    board.display
+    @board.display
   else
     puts "You entered an invalid move. Please try again"
     turn 
