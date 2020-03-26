@@ -43,8 +43,8 @@ def middle_move
 end
 
 def block 
-  winning_row = WIN_COMBINATIONS.find do |combo|
-      (board.cells[combo[0]] == other && board.cells[combo[1]] == other && board.cells[combo[2]] == " ") || (board.cells[combo[1]] == other && board.cells[combo[2]] == other && board.cells[combo[0]] == " ") || (board.cells[combo[2]] == other && board.cells[combo[0]] == other && board.cells[combo[1]] == " ")
+  winning_row = WIN_COMBINATIONS.find do |tokens|
+      (board.cells[tokens[0]] == enemy && board.cells[tokens[1]] == enemy && board.cells[tokens[2]] == " ") || (board.cells[tokens[1]] == enemy && board.cells[combo[2]] == enemy && board.cells[combo[0]] == " ") || (board.cells[combo[2]] == enemy && board.cells[tokens[0]] == enemy && board.cells[tokens[1]] == " ")
     end
     if winning_row != nil
       winning_cell = winning_row.find {|cell| board.cells[cell] == " "}
@@ -62,6 +62,10 @@ end
 
 def corner 
   CORNERS 
+end
+
+def enemy
+  
 end
 
 
