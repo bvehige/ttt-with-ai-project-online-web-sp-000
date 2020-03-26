@@ -61,7 +61,7 @@ end
  end
   
 def turn
-  puts "It's #{current_player}'s turn."
+  puts "It's #{self.current_player.token}'s turn."
   input = self.current_player.move(board).to_i  
   if board.valid_move?(input.to_s)
     board.update(input, current_player)
