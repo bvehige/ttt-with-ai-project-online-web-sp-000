@@ -62,6 +62,7 @@ end
   
 def turn
   puts "It's #{self.current_player.token}'s turn."
+  puts "To make a move please enter a number 1-9"
   input = self.current_player.move(board).to_i  
   if board.valid_move?(input.to_s)
     board.update(input, current_player)
@@ -77,7 +78,7 @@ def play
   turn
   end
     if won?
-      puts "Congratulations #{winner}!"
+      puts "Congratulations #{winner}!  You've won the game!"
     end
     if draw?
       puts "Cat's Game!"
