@@ -81,7 +81,7 @@ def play
       puts "Congratulations #{winner}!  You've won the game!"
     end
     if draw?
-      puts "Cat's Game!"
+      puts "Cat's Game!  It's a draw!"
     end
 end
   
