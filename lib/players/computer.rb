@@ -21,12 +21,7 @@ module Players
 #MIDDLES = board.cells[1, 3, 5, 7]
 
 def move(board)
-  if board.cells[4] == " "
-   "5"
-  else
   
-
-  end
 
 end
 
@@ -59,6 +54,10 @@ def winning_move
       winning_cell = winning_row.find {|cell| board.cells[cell] == " "}
     end
 end
+
+def center?
+    board.cells[4] == " "
+  end
 
 def middle 
  MIDDLES   
