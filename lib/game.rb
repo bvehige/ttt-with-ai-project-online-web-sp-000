@@ -113,7 +113,11 @@ def game_start
     
   elsif game_type == "wargames"
     victories = 0 
-    while victories < 100 Game.new
+    while victories < 100 
+     Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play 
+     victories += 1 
+   end
+   puts "There were #{victories} acheived"
    end
   
   puts "Would you like to play again? Y or N?" 
