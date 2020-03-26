@@ -20,6 +20,20 @@ def computer_move
   
 end
 
+def corner_move 
+  
+end
+
+def middle_move
+  
+end
+
+def winning_move
+  
+end
+
+
+
 
   
 end
