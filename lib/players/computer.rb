@@ -1,4 +1,5 @@
 require 'pry'
+attr_accessor :board
 
 module Players
   class Computer < Player
