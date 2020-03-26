@@ -28,6 +28,10 @@ def middle_move
   
 end
 
+def block 
+  
+end
+
 def winning_move
   
 end
