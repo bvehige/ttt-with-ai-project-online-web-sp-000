@@ -113,8 +113,8 @@ def game_start
   
   puts "Would you like to play again? Y or N?" 
    
+   game_start until gets.chomp == "N"
 end
 
-game_start until gets.chomp == "N" 
   
 end
