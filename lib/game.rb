@@ -78,10 +78,10 @@ def play
   turn
   end
     if won?
-      puts "Congratulations #{winner}!  You've won the game!"
+      puts "Congratulations #{winner}!"
     end
     if draw?
-      puts "Cat's Game!  It's a draw!"
+      puts "Cat's Game!"
     end
 end
   
