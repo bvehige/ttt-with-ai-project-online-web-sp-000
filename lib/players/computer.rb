@@ -5,24 +5,16 @@ module Players
 def move(board)
   
   corners = board.cells[0, 2, 6, 8]
-  middles board.cells[1, 3, 5, 7]
+  middles = board.cells[1, 3, 5, 7]
   
   if board.cells[4] == " "
    "5"
-  elsif corners.find |cell| cell == " "
-   "1" 
-  elsif board.cells[1] == " "
-   "2" 
-  elsif board.cells[2] == " "
-   "3" 
-  elsif board.cells[3] == " "
-   "4"  
-  elsif board.cells[5] == " "
-   "6"  
-  elsif board.cells[7] == " "
-   "8" 
-  elsif board.cells[8] == " "
-   "9"  
+  elsif corners.find {|cell| cell == " "}
+    
+  elsif middles.find {|cell| cell == " "}
+   
+  elsif board.cells.find {|cell| == " "}
+  
 
 end
 
