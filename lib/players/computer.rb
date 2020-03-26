@@ -35,7 +35,7 @@ def computer_move
 end
 
 def corner_move 
-  
+  corner.find {|cell| board.cells[cell] == " "}
 end
 
 def middle_move
@@ -52,6 +52,10 @@ end
 
 def middle 
  MIDDLES   
+end
+
+def corner 
+  CORNERS 
 end
 
 
