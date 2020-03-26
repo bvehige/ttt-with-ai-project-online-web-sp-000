@@ -11,11 +11,11 @@ def move(board)
   binding.pry 
   if board.cells[4] == " "
    "5"
-  elsif corners.find {|cell| board.cells == " "}
+  elsif corners.find {|cell| board.cells[cell] == " "}
     
-  elsif middles.find {|cell| board.cells == " "}
+  elsif middles.find {|cell| board.cells[cell] == " "}
    
-  elsif board.cells.find {|cell| board.cells == " "}
+  elsif board.cells.find {|cell| board.cells[cell] == " "}
   
 
 end
