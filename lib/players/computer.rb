@@ -21,17 +21,17 @@ module Players
 #MIDDLES = board.cells[1, 3, 5, 7]
 
 def move(board)
-  @board = board
-    case
-      when winning_move != nil
-        input = winning_move + 1
-      when block != nil
-        input = block + 1
-      when center?
-        input = 5
-      when corner_move 
-        input = corner_move + 1
-      else
+  if center?
+    input = 5 
+  elsif winning_move != nil
+    input = winning_move + 1 
+  elsif block != nil
+    input = block + 1 
+  elsif corner_move != nil 
+    input = corner_move + 1 
+  elsif middle_move != nil 
+    input = middle_move + 1 
+  else
         until !board.taken?(input)
           input = (1..9).to_a.sample
         end
