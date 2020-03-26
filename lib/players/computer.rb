@@ -9,7 +9,7 @@ def move(board)
   
   if board.cells[4] == " "
    "5"
-  elsif board.cells[0] == " "
+  elsif corners.find |cell| cell == " "
    "1" 
   elsif board.cells[1] == " "
    "2" 
