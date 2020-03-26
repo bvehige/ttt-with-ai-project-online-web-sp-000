@@ -39,7 +39,7 @@ def corner_move
 end
 
 def middle_move
-  
+  middle.find {|cell| board.cells
 end
 
 def block 
@@ -51,7 +51,7 @@ def winning_move
 end
 
 def middle 
-middle =   
+ MIDDLES   
 end
 
 
