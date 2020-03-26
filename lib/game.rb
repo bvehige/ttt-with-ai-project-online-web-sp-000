@@ -93,7 +93,7 @@ def game_start
  puts    "1 - for You vs. Computer"
  puts    "2 - for Human vs. Human" 
  puts    "0 - for Computer vs. Itself"
- puts    "wargames - the computer plays itself 100 times and "
+ puts    "wargames - the computer plays itself 100 times and           reports how many victories are acheived"
  
  game_type = gets.chomp
  
@@ -110,6 +110,10 @@ def game_start
   
   elsif game_type == "0"
     Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
+    
+  elsif game_type == "wargames"
+    victories = 0 
+    100
    end
   
   puts "Would you like to play again? Y or N?" 
