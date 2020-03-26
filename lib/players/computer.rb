@@ -36,7 +36,6 @@ def move(board)
           input = (1..9).to_a.sample
         end
     end
-    input.to_s
 
 end
 
