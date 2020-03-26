@@ -3,8 +3,6 @@ require 'pry'
 module Players
   class Computer < Player
 
-attr_accessor :board
-
  attr_accessor :board
   WIN_COMBINATIONS = [
   [0, 1, 2],
@@ -31,7 +29,7 @@ def move(board)
 end
 
 def computer_move 
-  
+  winning_move || block || corner_move || middle_move 
 end
 
 def corner_move 
@@ -52,7 +50,12 @@ def block
 end
 
 def winning_move
-  
+  winning_row = WIN_COMBINATIONS.find do |tokens|
+      (board.cells[tokens[0]] == token && board.cells[tokens[1]] == token && board.cells[tokens[2]] == " ") || (board.cells[tokens[2]] == token && board.cells[tokens[1]] == token && board.cells[tokens[0]] == " ") || (board.cells[tokens[0]] == token && board.cells[tokens[2]] == token && board.cells[tokens[1]] == " ")
+    end
+    if winning_row != nil
+      winning_cell = winning_row.find {|cell| board.cells[cell] == " "}
+    end
 end
 
 def middle 
