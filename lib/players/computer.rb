@@ -48,7 +48,6 @@ def block
     end
     if winning_row != nil
       winning_cell = winning_row.find {|cell| board.cells[cell] == " "}
-    end
   end
 end
 
