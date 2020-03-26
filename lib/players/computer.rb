@@ -50,6 +50,10 @@ def winning_move
   
 end
 
+def middle 
+middle =   
+end
+
 
 
 
