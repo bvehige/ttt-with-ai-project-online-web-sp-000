@@ -17,6 +17,7 @@ attr_accessor :board
   [6, 4, 2]
   ]
   CORNERS = [0, 2, 8, 6]
+  MIDDLES = [1, 3, 5, 7]
 
 #CORNERS = board.cells[0, 2, 6, 8]
 #MIDDLES = board.cells[1, 3, 5, 7]
