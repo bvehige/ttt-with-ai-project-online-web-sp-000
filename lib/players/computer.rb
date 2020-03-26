@@ -5,6 +5,7 @@ module Players
 
 corners = board.cells[0, 2, 6, 8]
 middles = board.cells[1, 3, 5, 7]
+
 def move(board)
   
   binding.pry 
