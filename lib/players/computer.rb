@@ -65,7 +65,7 @@ def corner
 end
 
 def enemy
-  token = "X"? 
+  token = "X"? "O" : "X"
 end
 
 
