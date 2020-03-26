@@ -87,7 +87,6 @@ end
    
 
 def game_start
- puts "Welcome to Tic-Tac-Toe!"  
  puts "How many players would like to play?"
  puts "Please enter 1, 2, or 0"
  puts    "1 - for You vs. Computer"
